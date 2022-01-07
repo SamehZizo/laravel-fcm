@@ -23,7 +23,7 @@ Firebase Cloud Messaging handler Package
 composer update
   ```
 
-#### 3. Create class that implements FCMManagerResponse interface to handel responses
+#### 3. Create class that implements FCMManagerResponse interface to handle responses
 ```sh
 FCMResponse implemnts FCMManagerResponse
   ```
