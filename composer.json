@@ -3,7 +3,11 @@
     "description": "Firebase Cloud Messaging handler Package",
     "type": "project",
     "license": "MIT",
-    "keywords": ["fcm", "laravel", "firebase"],
+    "keywords": [
+        "fcm",
+        "laravel",
+        "firebase"
+    ],
     "authors": [
         {
             "name": "SamehZizo",
@@ -16,5 +20,7 @@
             "Sameh\\LaravelFCM\\\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+    }
 }
