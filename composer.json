@@ -1,0 +1,20 @@
+{
+    "name": "sameh/laravel-fcm",
+    "description": "Firebase Cloud Messaging handler Package",
+    "type": "project",
+    "license": "MIT",
+    "keywords": ["fcm", "laravel", "firebase"],
+    "authors": [
+        {
+            "name": "SamehZizo",
+            "email": "samh_zamalkawe@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Sameh\\LaravelFCM\\\\": "src/"
+        }
+    },
+    "require": {}
+}
