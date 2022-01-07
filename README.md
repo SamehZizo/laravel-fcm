@@ -18,9 +18,9 @@ Firebase Cloud Messaging handler Package
   ]
   ```
 
-#### 2. Run below command to update composer
+#### 2. Run below command to update install
 ```sh
-composer update
+composer install
   ```
 
 #### 3. Create class that implements FCMManagerResponse interface to handle responses
