@@ -43,7 +43,7 @@ FCMResponse implements FCMManagerResponse
 
 - #### Send Message to Topic
 ```sh
-  FCMManager::send_message_to_topic(data, topic, FCMResponse)
+FCMManager::send_message_to_topic(data, topic, FCMResponse)
   ```
   
   - #### Send Message to Tokens
