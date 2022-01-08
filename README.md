@@ -2,6 +2,7 @@
 Firebase Cloud Messaging handler Package
 
 ## Required
+
 ```sh
   Laravel 8
   ```
