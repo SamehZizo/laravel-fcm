@@ -18,17 +18,29 @@ Firebase Cloud Messaging handler Package
   ]
   ```
 
-#### 2. Run below command to update install
+#### 2. Run below command to update composer
 ```sh
-composer install
+composer update
   ```
 
 #### 3. Create class that implements FCMManagerResponse interface to handle responses
 ```sh
-FCMResponse implemnts FCMManagerResponse
+FCMResponse implements FCMManagerResponse
+  ```
+  
+#### 4. Add firebase server key to config (config folder -> app.php file) with key 'firebase_server_key'
+```sh
+'firebase_server_key' => The Key
   ```
   
 ## Use
 
-- #### Change menu file
-  ###### Change "menu_layout" variable in config -> laravel_system
+- #### Send Message to Topic
+```sh
+  FCMManager::send_message_to_topic(data, topic, FCMResponse interface)
+  ```
+  
+  - #### Send Message to Tokens
+  ```sh
+  FCMManager::send_message_to_topic(data, tokens, FCMResponse interface)
+  ```
