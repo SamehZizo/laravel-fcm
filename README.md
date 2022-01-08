@@ -28,6 +28,11 @@ composer update
 FCMResponse implements FCMManagerResponse
   ```
   
+#### 4. Add firebase server key to config (config folder -> app.php file) with key 'firebase_server_key'
+```sh
+'firebase_server_key' => 'the key'
+  ```
+  
 ## Use
 
 - #### Change menu file
