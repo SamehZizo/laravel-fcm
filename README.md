@@ -25,7 +25,7 @@ composer install
 
 #### 3. Create class that implements FCMManagerResponse interface to handle responses
 ```sh
-FCMResponse implemnts FCMManagerResponse
+FCMResponse implements FCMManagerResponse
   ```
   
 ## Use
