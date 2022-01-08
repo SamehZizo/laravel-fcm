@@ -35,5 +35,8 @@ FCMResponse implements FCMManagerResponse
   
 ## Use
 
-- #### Change menu file
-  ###### Change "menu_layout" variable in config -> laravel_system
+- #### Send Message to Topic
+  ###### FCMManager::send_message_to_topic(data, topic, FCMResponse interface)
+  
+  - #### Send Message to Tokens
+  ###### FCMManager::send_message_to_topic(data, tokens, FCMResponse interface)
