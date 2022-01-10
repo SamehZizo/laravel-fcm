@@ -1,6 +1,12 @@
 # Laravel FCM
 Firebase Cloud Messaging handler Package
 
+## Required
+
+```sh
+  Laravel 8
+  ```
+
 ## Setup
 
 #### 1. Add libary to composer.json
@@ -37,10 +43,10 @@ FCMResponse implements FCMManagerResponse
 
 - #### Send Message to Topic
 ```sh
-  FCMManager::send_message_to_topic(data, topic, FCMResponse interface)
+FCMManager::send_message_to_topic(data, topic, FCMResponse)
   ```
   
   - #### Send Message to Tokens
   ```sh
-  FCMManager::send_message_to_topic(data, tokens, FCMResponse interface)
+  FCMManager::send_message_to_tokens(data, tokens, FCMResponse)
   ```
