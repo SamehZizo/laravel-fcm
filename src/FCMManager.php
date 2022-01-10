@@ -16,15 +16,25 @@ class FCMManager
         return Http::withHeaders($headers)->withToken($server_key)->post(self::$url, $data);
     }
 
+    public static function topic_request_data(array $data, string $topic): array
+    {
+        return ['to' => "/topics/$topic", 'data' => $data];
+    }
+
     public static function send_message_to_topic(array $data, string $topic, FCMManagerResponse $FCMManagerResponse = null)
     {
-        $request_data = ['to' => "/topics/$topic", 'data' => $data];
+        $request_data = self::topic_request_data($data, $topic);
         self::make_request($request_data, $FCMManagerResponse);
+    }
+
+    public static function tokens_request_data(array $data, array $tokens): array
+    {
+        return ['data' => $data, 'registration_ids' => $tokens];
     }
 
     public static function send_message_to_tokens(array $data, array $tokens, FCMManagerResponse $FCMManagerResponse = null)
     {
-        $request_data = ['data' => $data, 'registration_ids' => $tokens];
+        $request_data = self::tokens_request_data($data, $tokens);
         self::make_request($request_data, $FCMManagerResponse);
     }
 
